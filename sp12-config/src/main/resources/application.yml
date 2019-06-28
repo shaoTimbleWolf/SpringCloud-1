@@ -8,8 +8,8 @@ spring:
         git:
           uri: https://github.com/shaoTimbleWolf/sp-config.git
           searchPaths: config
-          #username: shaoTimbleWolf
-          #password: SYG622301199412081355
+          #username: 
+          #password: 
     
 server:
   port: 6001

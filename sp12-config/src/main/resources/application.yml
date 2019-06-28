@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shaoTimbleWolf/sp-config
+          uri: https://github.com/shaoTimbleWolf/sp-config.git
           searchPaths: config
           username: shaoTimbleWolf
           password: SYG622301199412081355

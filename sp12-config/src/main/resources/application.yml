@@ -1,19 +1,29 @@
 spring:
   application:
     name: config-server
+  profiles:
+    active: native
   rabbitmq:
-    host: 192.168.77.129
+    host: 192.168.48.128
     port: 5672
     username: admin
-    password: admin  
+    password: admin 
+#配置本地配置文件，/config 为默认目录，或者在src目录下课省略该配置
+#其余地方需要配置文件的绝对路径
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/shaoTimbleWolf/sp-config
-          searchPaths: config
-          #username: 
-          #password: 
+        native:
+          search-locations: classpath:/config 
+#配置从git获取配置文件
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/shaoTimbleWolf/sp-config
+#          searchPaths: config
+#          #username: 
+#          #password: 
     
 server:
   port: 6001

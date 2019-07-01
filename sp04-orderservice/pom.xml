@@ -31,7 +31,10 @@
 	</build>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>com.tedu</groupId>
 			<artifactId>sp01-commons</artifactId>

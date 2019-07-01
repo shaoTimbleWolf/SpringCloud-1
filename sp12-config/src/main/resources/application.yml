@@ -1,7 +1,11 @@
 spring:
   application:
     name: config-server
-  
+  rabbitmq:
+    host: 192.168.77.129
+    port: 5672
+    username: admin
+    password: admin  
   cloud:
     config:
       server:

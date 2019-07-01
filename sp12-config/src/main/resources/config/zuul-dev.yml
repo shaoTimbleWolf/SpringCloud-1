@@ -17,7 +17,9 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-
+turbine:
+  app-config: order-service, zuul
+  cluster-name-expression: new String("default")
  
 zuul:
   retryable: true
@@ -46,3 +48,7 @@ management:
     web:
       exposure:
         include: hystrix.stream
+        
+turbine:
+  app-config: order-service, zuul
+  cluster-name-expression: new String("default")

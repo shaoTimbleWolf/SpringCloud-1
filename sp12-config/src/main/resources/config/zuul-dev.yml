@@ -1,4 +1,7 @@
 spring:
+  sleuth:
+    sampler:
+      probability: 1
   application:
     name: zuul
   rabbitmq:
@@ -49,6 +52,3 @@ management:
       exposure:
         include: hystrix.stream
         
-turbine:
-  app-config: order-service, zuul
-  cluster-name-expression: new String("default")
